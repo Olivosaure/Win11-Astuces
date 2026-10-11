@@ -1,0 +1,10 @@
+Modifier la limite de raccourcis (Registre)
+Cette méthode augmente la capacité d'affichage des raccourcis épinglés (applications et fichiers). 
+
+Appuyez sur Win + R, tapez regedit et validez.
+Naviguez vers :
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+Faites un clic droit dans le panneau de droite > Nouveau > Valeur DWORD (32 bits). 
+Nommez-la JumpListItems_Maximum.
+Double-cliquez dessus, sélectionnez Décimal et entrez le nombre souhaité (ex: 20).
+Redémarrez l'Explorateur de fichiers ou l'ordinateur. 
