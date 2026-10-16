@@ -1,3 +1,11 @@
+# 1 --> Prérequis de compilation
 sudo apt update
+sudo apt install -y build-essential dkms linux-headers-$(uname -r) perl
 
-sudo apt install build-essential dkms linux-headers-$(uname -r)
+# 2 --> Installation des Guest Additions (paquets distro)
+sudo apt install -y virtualbox-guest-utils virtualbox-guest-x11
+
+# 3 --> Redémarrage
+sudo reboot   
+
+# sudo apt install build-essential dkms linux-headers-$(uname -r)
